@@ -1,4 +1,6 @@
-﻿namespace SPPRC.Algorithm
+﻿using static SPPRC.Algorithm.Core.Delegates;
+
+namespace SPPRC.Algorithm
 {
     public sealed class SolverOptions
     {

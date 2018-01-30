@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2024
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomBusNetwork", "RandomBusNetwork\RandomBusNetwork.csproj", "{B07393A5-F9A9-4989-8093-201046339C26}"
 EndProject
@@ -10,8 +10,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{365BC91D-C149-4D76-BE0E-AA0506DFAA16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolverTests", "SolverTests\SolverTests.csproj", "{D6EF4CEC-DFFA-4A1E-81A0-140ADB39B31B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPPRC.VRP", "SPPRC.VRP\SPPRC.VRP.csproj", "{635F9ECE-3754-484E-BF23-D715A410BD8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPPRC.VRP.Tests", "SPPRC.VRP.Tests\SPPRC.VRP.Tests.csproj", "{A5B7F9E3-24A9-4ED7-BB03-D86D0595FA7E}"
 EndProject
@@ -59,12 +57,6 @@ Global
 		{D6EF4CEC-DFFA-4A1E-81A0-140ADB39B31B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D6EF4CEC-DFFA-4A1E-81A0-140ADB39B31B}.Release|x64.ActiveCfg = Release|x64
 		{D6EF4CEC-DFFA-4A1E-81A0-140ADB39B31B}.Release|x64.Build.0 = Release|x64
-		{635F9ECE-3754-484E-BF23-D715A410BD8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{635F9ECE-3754-484E-BF23-D715A410BD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{635F9ECE-3754-484E-BF23-D715A410BD8F}.Debug|x64.ActiveCfg = Debug|x64
-		{635F9ECE-3754-484E-BF23-D715A410BD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{635F9ECE-3754-484E-BF23-D715A410BD8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{635F9ECE-3754-484E-BF23-D715A410BD8F}.Release|x64.ActiveCfg = Release|x64
 		{A5B7F9E3-24A9-4ED7-BB03-D86D0595FA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A5B7F9E3-24A9-4ED7-BB03-D86D0595FA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5B7F9E3-24A9-4ED7-BB03-D86D0595FA7E}.Debug|x64.ActiveCfg = Debug|x64

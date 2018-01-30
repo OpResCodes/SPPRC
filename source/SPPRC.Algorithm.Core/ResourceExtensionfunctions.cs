@@ -9,6 +9,5 @@ namespace SPPRC.Algorithm
             double z = x + y;
             return Math.Max(0, z);
         }
-
     }
 }
