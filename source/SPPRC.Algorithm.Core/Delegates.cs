@@ -9,5 +9,7 @@ namespace SPPRC.Algorithm.Core
 
         //Resource Extension Function delegate (defined in seperate class)
         public delegate double REF_handler(double x, double y);
+
+        
     }
 }

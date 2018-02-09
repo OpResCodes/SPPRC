@@ -20,8 +20,12 @@ namespace SPPRC.Sample
         {
             ResourceInfo rsnew = new ResourceInfo();
             rsnew.ResCount = 2;
-            rsnew.GeneralLimit = new double[] { 225, 360 };
             rsnew.IntitalValues = new double[] { 0, 0 };
+            rsnew.GeneralConstraints = new ResourceConstraint[] 
+            {
+                new ResourceConstraint(double.NegativeInfinity, 225),
+                new ResourceConstraint(double.NegativeInfinity, 360)
+            };
             rsinfo = rsnew;
         }
 
@@ -30,7 +34,7 @@ namespace SPPRC.Sample
             nodes = new List<Node>();
             for(int i=1 ; i < 9; i++)
             {
-                Node newnode = new Node(i,rsinfo.GeneralLimit, i, i);
+                Node newnode = new Node(i,rsinfo.GeneralConstraints, i, i);
                 nodes.Add(newnode);
             }
         }

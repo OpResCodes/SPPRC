@@ -5,7 +5,7 @@ namespace SPPRC.Model
     public class Node : IIdentify
     {
 
-        public Node(int NodeId, string newLabel, double[] newResLimit, int newTime_id, int newLocation_id)
+        public Node(int NodeId, string newLabel, ResourceConstraint[] constraints, int newTime_id, int newLocation_id)
         {
             Id = NodeId;
             Label = newLabel;
@@ -15,18 +15,20 @@ namespace SPPRC.Model
 
             LowerBoundEstimate = 0;
             IsLowerBoundSet = false;
-            ResourceLimit = newResLimit;
+            ResourceConstraints = constraints;
             NodeLocationId = newLocation_id;
             NodeTimeId = newTime_id;
         }
 
-        public Node(int NodeId, double[] newResLimit, int newTime_id, int newLocation_id) : this(NodeId, string.Empty, newResLimit, newTime_id, newLocation_id)
+        public Node(int NodeId, ResourceConstraint[] constraints, int newTime_id, int newLocation_id) 
+            : this(NodeId, string.Empty, constraints, newTime_id, newLocation_id)
         {
             Label = NodeId.ToString();
         }
 
         #region Properties
 
+        
         public int Id { get; set; }
 
         public string Label { get; set; }
@@ -35,7 +37,7 @@ namespace SPPRC.Model
 
         public int NodeTimeId { get; private set; }
 
-        public double[] ResourceLimit { get; private set; }
+        public ResourceConstraint[] ResourceConstraints { get; private set; }
 
         public double LowerBoundEstimate { get; set; }
 

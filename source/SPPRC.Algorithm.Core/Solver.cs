@@ -114,8 +114,11 @@ namespace SPPRC.Algorithm
             //Resourcevalidation
             while (nodeStateValid && i <= Graph.ResourceInfo.ResCount - 1)
             {
-                rx[i] = Options.ResourceExtensionFunction(preState.Resources[i], preArc.ResourceConsumption[i]);
-                nodeStateValid = (rx[i] <= forNode.ResourceLimit[i]);
+                rx[i] = Options.ResourceExtensionFunctions[i](preState.Resources[i], preArc.ResourceConsumption[i]);
+                nodeStateValid = (
+                    rx[i] <= forNode.ResourceConstraints[i].MaxValue && 
+                    rx[i] >= forNode.ResourceConstraints[i].MinValue
+                    );
                 i++;
             }
             //if failed return

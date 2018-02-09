@@ -18,7 +18,7 @@ namespace SolverTests
         private void Calc()
         {
             GetSampleGraph();
-            _solver = new Solver(new SolverOptions(),_testgraph);
+            _solver = new Solver(new SolverOptions(2),_testgraph);
             _solver.Calculate();
         }
 
@@ -32,7 +32,7 @@ namespace SolverTests
         {
             GetSampleGraph();
             _testgraph.BuildSubGraphs();
-            _solver = new ParallelSolver(new SolverOptions(), _testgraph);
+            _solver = new ParallelSolver(new SolverOptions(2), _testgraph);
             _solver.Calculate();
         }
 
